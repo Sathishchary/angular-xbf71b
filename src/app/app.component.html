@@ -1,0 +1,9 @@
+<div class="container">
+	<!-- <hello></hello> -->
+
+	<select name="dropdown" class="form-control" [ngModel]="selecteFiled">
+  <ng-container  *ngFor="let item of selectArray">
+   <option [value]="item"  *ngIf="item !=='step'"> {{item}} </option>
+</ng-container>
+ </select>
+</div>
