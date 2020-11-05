@@ -15,4 +15,13 @@ export class AppComponent {
   constructor(){
     this.selecteFiled = this.selectArray[0];
   }
+
+    valueChange(value) {
+    console.log(value);
+    setTimeout(() => {
+      this.selecteFiled = "Section";
+      console.log(this.selecteFiled);
+    }, 3);
+    console.log(this.selecteFiled);
+  }
 }
