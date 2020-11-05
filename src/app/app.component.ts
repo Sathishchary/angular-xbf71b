@@ -10,18 +10,22 @@ export class AppComponent {
   selecteFiled: any;
   array = [1, "2", 6, 0.5, "6366"];
 
-  selectArray = ['Section', 'StepAction', 'step', 'step'];
+  selectArray = ["Section", "StepAction", "step", "step"];
 
-  constructor(){
+  constructor() {
     this.selecteFiled = this.selectArray[0];
   }
 
-    valueChange(value) {
+  valueChange(value) {
     console.log(value);
+
+    console.log(this.selecteFiled);
+  }
+
+  valueUpdated() {
     setTimeout(() => {
       this.selecteFiled = "Section";
       console.log(this.selecteFiled);
     }, 3);
-    console.log(this.selecteFiled);
   }
 }
